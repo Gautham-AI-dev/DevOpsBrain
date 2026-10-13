@@ -30,6 +30,7 @@ android {
     }
 }
 
-// M1: zero external dependencies (framework only).
+// M1: minimal deps — AndroidX core only (permissions compat).
 dependencies {
+    implementation 'androidx.core:core:1.13.1'
 }
