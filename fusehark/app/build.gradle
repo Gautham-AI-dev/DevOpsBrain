@@ -1,0 +1,35 @@
+plugins {
+    id 'com.android.application' version '8.5.2'
+    id 'org.jetbrains.kotlin.android' version '1.9.24'
+}
+
+android {
+    namespace 'com.fusehark'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'com.fusehark'
+        minSdk 29
+        targetSdk 34
+        versionCode 1
+        versionName '0.1.0-m1'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+}
+
+// M1: zero external dependencies (framework only).
+dependencies {
+}
