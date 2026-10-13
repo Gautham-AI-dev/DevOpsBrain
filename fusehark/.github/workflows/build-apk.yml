@@ -2,8 +2,8 @@ name: fusehark-apk
 
 on:
   push:
-    branches: [main]
-    paths: ['app/**', '.github/workflows/build-apk.yml']
+    branches: [main, master, fusehark-clean, fusehark-m1]
+    paths: ['fusehark/app/**', 'fusehark/.github/workflows/build-apk.yml']
   workflow_dispatch:
 
 jobs:
